@@ -6,13 +6,14 @@
   "scripts": {
     "start": "node app.js",
     "app": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lachlan2108/ASSIGNMENT_1B-_Team_Product_Development_Process"
+    "url": "git+https://github.com/Rexic/SPEED.git"
   },
   "author": "",
   "license": "ISC",
@@ -32,6 +33,7 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
     "nodemon": "^2.0.20"
   }
 }
