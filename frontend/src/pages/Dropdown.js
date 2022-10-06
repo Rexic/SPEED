@@ -14,7 +14,7 @@ class Dropdown extends Component {
   //   }
 
   handleSubmit(event) {
-    alert('what acsess do you need: ' + this.state.value);
+    alert('What acsess do you need: ' + this.state.value);
     event.preventDefault();
   }
 
