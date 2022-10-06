@@ -1,10 +1,10 @@
 // app.js
+require("dotenv").config({path: "./config.env"});
 const express = require('express');
 const connectDB = require('./config/db');
 var cors = require('cors');
 var bodyParser = require('body-parser');
-const config = require('config');
-const db = config.get('mongoURI');
+const db = process.env.MONGO_URI;
 
 var mongoose = require("mongoose");
 
