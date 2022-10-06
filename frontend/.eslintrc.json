@@ -27,6 +27,7 @@
         "react/react-in-jsx-scope": ["off"],
         "react/jsx-props-no-spreading": ["warn"],
         "no-shadow": "off",
-        "react/jsx-filename-extension": [0]
+        "react/jsx-filename-extension": [0],
+        "linebreak-style":0
     }
 }
