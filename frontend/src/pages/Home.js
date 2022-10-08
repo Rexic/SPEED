@@ -6,7 +6,7 @@ class Home extends Component {
     return (
       <div>
         <h2> How to use SPEED</h2>
-      </div>      
+      </div>
     );
   }
 }

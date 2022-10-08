@@ -1,3 +1,6 @@
+/* eslint-disable no-alert */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import { Component } from 'react';
 
 class Dropdown extends Component {
@@ -14,11 +17,11 @@ class Dropdown extends Component {
   //   }
 
   handleSubmit(event) {
-    alert('What acsess do you need: ' + this.state.value);
+    alert(`What access do you need: ${this.state.value}`);
     event.preventDefault();
   }
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.setState({ value: event.target.value });
   };
 

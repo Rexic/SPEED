@@ -20,6 +20,9 @@ const tablecolumns = [
   }, {
     Header: 'Level of Evidence',
     accessor: 'evidence',
+  }, {
+    Header: 'testing',
+    accessor: 'moderationStatus',
   },
 ];
 module.exports = tablecolumns;

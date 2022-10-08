@@ -8,6 +8,7 @@ const articles = [
     doi: 'https://doi.org/10.1145/2601248.2601267',
     claim: 'code quality improvement',
     evidence: 'strong support',
+    moderationStatus: 'moderationNeeded',
   },
   {
     _id: '2',
