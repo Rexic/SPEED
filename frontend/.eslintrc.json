@@ -5,10 +5,12 @@
         "jest": true
     },
     "extends": [
-        "./react-app",
-        "./react-app/jest",
+        "react-app",
+        "react-app/jest",
         "airbnb",
-        "plugin:prettier/recommended"
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript"
     ],
     "overrides": [
     ],
@@ -24,6 +26,8 @@
         "react/jsx-uses-react": ["off"],
         "react/react-in-jsx-scope": ["off"],
         "react/jsx-props-no-spreading": ["warn"],
-        "no-shadow": "off"
+        "no-shadow": "off",
+        "react/jsx-filename-extension": [0],
+        "linebreak-style":0
     }
 }
