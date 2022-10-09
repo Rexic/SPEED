@@ -24,6 +24,9 @@ const ArticleSchema = new mongoose.Schema({
   evidence: {
     type: String,
   },
+  moderationStatus: {
+    type: { type: String, default: 'moderationNeeded' },
+  },
 });
 
 const Article = mongoose.model('article', ArticleSchema);

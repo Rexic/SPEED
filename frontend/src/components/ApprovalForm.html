@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Article Moderation</title>
+</head>
+<body>
+
+
+<form action="${pageContext.request.contextPath}/yourServletURL" method="post">
+    <p>Does this article meet moderation standards?
+    <select name="Moderation Status">
+        <option value="Approve">Approve</option>
+        <option value="Denied">Denied</option>
+    </select></p>
+    <p>Submit button.
+    <input type="submit" name="submit" value="submit" /></p>
+</form>
+
+</body>
+</html>

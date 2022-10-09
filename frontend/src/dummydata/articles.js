@@ -8,6 +8,7 @@ const articles = [
     doi: 'https://doi.org/10.1145/2601248.2601267',
     claim: 'code quality improvement',
     evidence: 'strong support',
+    moderationStatus: 'moderationNeeded',
   },
   {
     _id: '2',
@@ -18,6 +19,7 @@ const articles = [
     doi: 'https://doi.org/10.1145/2601248.2601267',
     claim: 'product quality improvement',
     evidence: 'weak support',
+    moderationStatus: 'moderationNeeded',
   },
   {
     _id: '3',
@@ -28,6 +30,7 @@ const articles = [
     doi: 'https://doi.org/10.1007/s10664-008-9062-z',
     claim: 'product quality improvement',
     evidence: 'weak support',
+    moderationStatus: 'approved',
   },
   {
     _id: '4',
