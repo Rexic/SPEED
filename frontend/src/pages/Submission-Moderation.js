@@ -1,4 +1,8 @@
-import ApprovalForm from '../components/SubmissionForm';
+import articles from '../dummydata/articles';
+import Styles from '../components/tablestyle';
+import Table from '../components/evidencetable';
+import tablecolumns from '../components/tablecolumns';
+import Dropdown from '../components/Dropdown';
 import '../App.css';
 
 function ModerateArticle() {
@@ -8,7 +12,13 @@ function ModerateArticle() {
       <p>
         Submitted articles pending review.
       </p>
-      <ApprovalForm />
+      <Dropdown />
+      <Styles>
+        <Table
+          data={articles}
+          columns={tablecolumns}
+        />
+      </Styles>
     </div>
   );
 }
