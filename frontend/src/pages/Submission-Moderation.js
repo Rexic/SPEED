@@ -1,20 +1,16 @@
-import articles from '../dummydata/articles';
-import Styles from '../components/tablestyle';
-import Table from '../components/evidencetable';
-import tablecolumns from '../components/tablecolumns';
+import ApprovalForm from '../components/SubmissionForm';
+import '../App.css';
 
-function SubmissionModeration() {
+function ModerateArticle() {
   return (
     <div>
-      <h2>Page to moderate articles submitted for addition</h2>
-      <Styles>
-        <Table
-          data={articles}
-          columns={tablecolumns}
-        />
-      </Styles>
+      <h2>Moderate Article</h2>
+      <p>
+        Submitted articles pending review.
+      </p>
+      <ApprovalForm />
     </div>
   );
 }
 
-export default SubmissionModeration;
+export default ModerateArticle;

@@ -2,18 +2,23 @@ const ModerationStatus = [
   {
     id: 1,
     moderationStatus: 'approved',
+    label: 'Approved',
+    value: 'approved',
   },
   {
     id: 2,
-    moderationStatus: 'denied',
+    label: 'Denied',
+    value: 'denied',
   },
   {
     id: 3,
-    moderationStatus: 'moderationNeeded',
+    label: 'ModerationNeeded',
+    value: 'moderatioNeeded',
   },
   {
     id: 4,
-    moderationStatus: 'analystNeeded',
+    label: 'AnalystNeeded',
+    value: 'analystNeeded',
   },
 ];
 export default ModerationStatus;
