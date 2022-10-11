@@ -9,7 +9,10 @@
     "test": "",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepare-react": "cd frontend && npm install",
+    "build-react": "cd frontend && npm run build",
+    "heroku-postbuild": "npm run prepare-react && npm run build-react"
   },
   "repository": {
     "type": "git",
