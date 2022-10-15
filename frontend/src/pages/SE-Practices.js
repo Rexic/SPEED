@@ -44,7 +44,7 @@ function SEPractice() {
             onChange={handleFilter}
           />
           <div className="searchIcon">
-            {filteredData.length === 0 ? (
+            {filteredData.length === articles.length ? (
               <SearchIcon />
             ) : (
               <CloseIcon id="clearBtn" onClick={clearInput} />
