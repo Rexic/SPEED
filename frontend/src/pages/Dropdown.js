@@ -29,13 +29,12 @@ class Dropdown extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          what acsess do you need:
+          what access do you need:
           <select value={this.state.value} onChange={this.handleChange}>
             <option value="Student">Student</option>
             <option value="Moderator">Moderator</option>
-            <option value="Submitter">Submitter</option>
+            <option value="Analyst">Analyst</option>
             <option value="Administrator">Administrator</option>
-            <option value="Researcher">Researcher</option>
           </select>
         </label>
         <input type="submit" value="Submit" />

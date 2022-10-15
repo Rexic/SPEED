@@ -50,7 +50,12 @@ app.use(cors({ origin: true, credentials: true }));
 
 // Init Middleware
 app.use(express.json({ extended: false }));
-
+if(process.env.NODE_ENV){
+    app.use(express.static(__dirname+'/frontend/build'))
+    app.get('*',(req,res)=>{
+        res.sendFile(__dirname+'/frontend/build/index.html')
+    })
+}
 app.get('/', (req, res) => res.send('Hello world!'));
 
 const port = process.env.PORT || 8082;
