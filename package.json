@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky install",
-    "prepare-react": "cd frontend && npm install",
+    "prepare-react": "cd frontend && npm install --force",
     "build-react": "cd frontend && npm run build",
     "heroku-postbuild": "npm run prepare-react && npm run build-react"
   },
