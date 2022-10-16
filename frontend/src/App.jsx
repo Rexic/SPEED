@@ -12,32 +12,11 @@ import SEPractice from './pages/SE-Practices';
 import SubmitArticle from './pages/Submit-Article';
 import NotFoundPage from './pages/404';
 import ModerateArticle from './pages/Submission-Moderation';
+import routePaths from './pages/routePaths'
 
 function App() {
   return (
-    <Router>
-      <div>
-        <h1>Software Practice Empirical Evidence Database (SPEED)</h1>
-        <Dropdown />
-        <ul className="header">
-          <li><NavLink exact to="/Home">Home</NavLink></li>
-          <li><NavLink to="/SEPractices">Select the Practice</NavLink></li>
-          <li><NavLink to="/SubmitArticle">Submit an Article</NavLink></li>
-          <li><NavLink to="/ModerateArticle">Moderate Articles</NavLink></li>
-        </ul>
-        <div className="content">
-          <Route exact path="/Home" component={Home} />
-          <Route path="/SEPractices" component={SEPractice} />
-          <Route path="/SubmitArticle" component={SubmitArticle} />
-          <Route path="/ModerateArticle" component={ModerateArticle} />
-          <Route exact path="/404" component={NotFoundPage} />
-          <Redirect to="/404" />
-          <Route exact path="/" component={Home}>
-            <Redirect to="/Home" />
-          </Route>
-        </div>
-      </div>
-    </Router>
+    routePaths()
   );
 }
 

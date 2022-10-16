@@ -23,6 +23,12 @@ class Dropdown extends Component {
 
   handleChange = (event) => {
     this.setState({ value: event.target.value });
+
+    if(this.state.value == "Moderator" ){
+              <NavLink to={`${routePaths.LEADSFORM}`}> 
+                  {isOnline}
+              </NavLink>
+    }else{null}
   };
 
   render() {
