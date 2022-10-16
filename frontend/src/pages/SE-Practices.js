@@ -12,6 +12,7 @@ import Dropdown from '../components/Dropdown';
 function SEPractice() {
   const [filteredData, setFilteredData] = useState(articles);
   const [wordEntered, setWordEntered] = useState('');
+  // eslint-disable-next-line no-bitwise
 
   const handleFilter = (event) => {
     const searchWord = event.target.value;
