@@ -17,7 +17,7 @@ class Dropdown extends Component {
   //   }
 
   handleSubmit(event) {
-    alert(`What access do you need: ${this.state.value}`);
+    alert(`Your Acsess has been changed to: ${this.state.value}`);
     event.preventDefault();
   }
 
