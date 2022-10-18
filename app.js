@@ -55,8 +55,10 @@ if(process.env.NODE_ENV){
     app.get('*',(req,res)=>{
         res.sendFile(__dirname+'/frontend/build/index.html')
     })
+}else{
+    app.get('/', (req, res) => res.send('Hello world!'));
 }
-app.get('/', (req, res) => res.send('Hello world!'));
+
 
 const port = process.env.PORT || 8082;
 

@@ -9,8 +9,7 @@
     "test": "",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare": "husky install",
-    "prepare-react": "cd frontend && npm install",
+    "prepare-react": "cd frontend && npm install --force",
     "build-react": "cd frontend && npm run build",
     "heroku-postbuild": "npm run prepare-react && npm run build-react"
   },
@@ -46,7 +45,6 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.0",
     "nodemon": "^2.0.20"
   }
 }
