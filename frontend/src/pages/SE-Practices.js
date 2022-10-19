@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import { YearRangePicker } from 'react-year-range-picker';
 import { MdOutlineSearch, MdCancel } from 'react-icons/md';
 import '../components/SearchBar.css';
 import articles from '../dummydata/articles';
@@ -12,7 +11,6 @@ import Dropdown from '../components/Dropdown';
 function SEPractice() {
   const [filteredData, setFilteredData] = useState(articles);
   const [wordEntered, setWordEntered] = useState('');
-  const [yearRange, setYearRange] = useState();
 
   const handleFilter = (event) => {
     const searchWord = event.target.value;
@@ -25,15 +23,6 @@ function SEPractice() {
     } else {
       setFilteredData(newFilter);
     }
-  };
-
-  // eslint-disable-next-line no-unused-vars
-  const yearFilter = (event) => {
-    const searchWord = event.target.value;
-    setWordEntered(searchWord);
-    // eslint-disable-next-line max-len
-    const newFilter = filteredData.pubyear >= yearRange.startYear && filteredData.pubyear <= yearRange.endYear;
-    setFilteredData(newFilter);
   };
 
   // eslint-disable-next-line no-unused-vars
@@ -63,25 +52,6 @@ function SEPractice() {
           </div>
         </div>
       </div>
-      <YearRangePicker
-        minYear={new Date().getFullYear() - 20}
-        maxYear={new Date().getFullYear()}
-        onSelect={(startYear, endYear) => {
-          setYearRange({ startYear, endYear });
-          yearFilter();
-        }}
-        startYear={yearRange?.startYear}
-        endYear={yearRange?.endYear}
-      />
-      <span style={{ marginLeft: '50px' }}>
-        Selected Years :
-        {' '}
-        {yearRange?.startYear}
-        {' '}
-        -
-        {' '}
-        {yearRange?.endYear}
-      </span>
       <Styles>
         <Table
           data={filteredData}
