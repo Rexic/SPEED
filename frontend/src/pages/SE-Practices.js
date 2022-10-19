@@ -1,9 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { YearRangePicker } from 'react-year-range-picker';
+import { MdOutlineSearch, MdCancel } from 'react-icons/md';
 import '../components/SearchBar.css';
-import SearchIcon from '@material-ui/icons/Search';
-import CloseIcon from '@material-ui/icons/Close';
 import articles from '../dummydata/articles';
 import Styles from '../components/tablestyle';
 import Table from '../components/evidencetable';
@@ -37,6 +36,7 @@ function SEPractice() {
     setFilteredData(newFilter);
   };
 
+  // eslint-disable-next-line no-unused-vars
   const clearInput = () => {
     setFilteredData(articles);
     setWordEntered('');
@@ -56,9 +56,9 @@ function SEPractice() {
           />
           <div className="searchIcon">
             {wordEntered.length === 0 ? (
-              <SearchIcon />
+              <MdOutlineSearch />
             ) : (
-              <CloseIcon id="clearBtn" onClick={clearInput} />
+              <MdCancel id="clearBtn" onClick={clearInput} />
             )}
           </div>
         </div>
