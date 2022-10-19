@@ -9,7 +9,7 @@
     "test": "",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare-react": "cd frontend && npm install --force",
+    "prepare-react": "npm install && cd frontend && npm install --force",
     "build-react": "cd frontend && npm run build",
     "heroku-postbuild": "npm run prepare-react && npm run build-react"
   },
