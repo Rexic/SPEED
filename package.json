@@ -29,6 +29,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "is-module": "^1.0.0",
+    "magic-string": "^0.26.7",
     "mongoose": "^6.6.1",
     "namor": "1.0.1",
     "pretty-error": "^4.0.0",
